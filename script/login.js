@@ -3,7 +3,7 @@ function loginCheck() {
     var request = new XMLHttpRequest();
 
     // Instantiating the request object
-    request.open("POST", "https://book-sharing-app-361218.uc.r.appspot.com/api/auth/signin");
+    request.open("POST", "https://book-sharing-app.herokuapp.com/api/auth/signin");
     
     // Specifying the MIME type of the request body
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
