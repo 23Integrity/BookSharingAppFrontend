@@ -14,7 +14,7 @@ function loginCheck() {
         // Check if the request is compete and was successful
         if(this.readyState === 4 && this.status === 200) {
             localStorage.setItem("login", login)
-            open("mainpage.html", "_self")
+            open("listings.html", "_self")
         }
     };
 
