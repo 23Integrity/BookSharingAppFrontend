@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/login.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAgHkBbf_jGchkIK_RFIO-n7owTG4k0Jos",
+          authDomain: "book-sharing-app-361218.firebaseapp.com",
+          projectId: "book-sharing-app-361218",
+          storageBucket: "book-sharing-app-361218.appspot.com",
+          messagingSenderId: "771356971780",
+          appId: "1:771356971780:web:c54a647f55e475589ab651"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</head>
+<body>
+    <div id="loginform">
+        <form id="logininput">
+            <div class="form">
+                <label for="login">Login: </label>
+                <input type="text" name="login" id="login" required>
+            </div>
+            <div class="form">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="form">
+                <input type="button" value="Login" onclick="loginCheck()">
+            </div>
+        </form>
+        <div id="registerunderlogin">
+            <p>No account yet? <a href="register.html">Register now!</a></p>
+        </div>
+    </div>
+</body>
+</html>
